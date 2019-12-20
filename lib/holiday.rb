@@ -66,7 +66,7 @@ def all_supplies_in_holidays(holiday_hash)
   puts "#{season.capitalize}:"
     supply.map do |holiday, decorations|
       #binding.pry
-      puts "#{holiday.capitalize}: #{decorations}"
+      puts "#{holiday.capitalize}: #{decorations.split}"
     end
   end
 end
