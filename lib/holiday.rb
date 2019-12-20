@@ -63,7 +63,7 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   holiday_hash.map do |season, supply|
-  puts "#{season.capitalize}:"
+  puts "#{season.capitalize!}:"
     supply.map do |holiday, decorations|
       #binding.pry
       puts "#{holiday.capitalize}: #{decorations}"
